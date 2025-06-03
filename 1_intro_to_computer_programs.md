@@ -1,5 +1,5 @@
 
-## Introduction to Python Programming – Study Guide
+## 1 Introduction to Python Programming – Study Guide
 
 ### 1.1 Introduction
 **Definition:** The process of writing instructions (program/software/code) to tell a computer how to perform a specific action.
