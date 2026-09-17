@@ -12,17 +12,45 @@ interface follows from it.
 
 ## Run the demos
 
+Set up once, from this folder:
+
 ```bash
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-
-streamlit run streamlit_hello_app.py
 ```
 
-The command starts a local server on `http://localhost:8501` and opens a browser
-tab. Edit the file and save: Streamlit detects the change and offers to rerun.
-Stop the server with `Ctrl+C`.
+Then run any one of the six apps. They are independent: each is a separate
+Streamlit application, and only one runs at a time. Stop it with `Ctrl+C` before
+starting the next.
+
+```bash
+streamlit run streamlit_orders_dashboard.py   # start here: a real dashboard
+streamlit run streamlit_hello_app.py          # the rerun model, deliberately plain
+streamlit run streamlit_caching.py            # cache hits and misses, live counters
+streamlit run streamlit_session_state.py      # a cart that survives reruns
+streamlit run streamlit_fragment_rerun.py     # partial reruns
+
+cd streamlit_multipage                        # this one runs from its own folder
+streamlit run streamlit_multipage_app.py
+```
+
+Each opens `http://localhost:8501` in a browser tab.
+
+| Run this | What you will see | What it teaches |
+| --- | --- | --- |
+| `streamlit_orders_dashboard.py` | Sidebar filters, four metric tiles, trend and mix charts, a formatted table, a CSV download | How the pieces below combine into an internal tool |
+| `streamlit_hello_app.py` | A counter, four controls, a price calculation, tabs | Every interaction re-executes the whole script |
+| `streamlit_caching.py` | Two columns racing the same file read, with execution counters | `@st.cache_data` against `@st.cache_resource` |
+| `streamlit_session_state.py` | A shopping cart and a quote form | State that survives a rerun, widget keys, callbacks |
+| `streamlit_fragment_rerun.py` | Two counters, one of which stops climbing | `@st.fragment` as a rerun boundary |
+| `streamlit_multipage/streamlit_multipage_app.py` | A three-page app with a role switch in the sidebar | `st.navigation`, `st.Page`, shared cached loaders |
+
+`data/orders.csv` is 2,400 rows of fabricated sales orders shared by every app,
+rebuilt deterministically by `data/generate_orders.py`.
+
+The apps are plain scripts. Edit one and save: Streamlit detects the change and
+offers to rerun it in the open tab.
 
 Useful flags:
 
@@ -35,21 +63,6 @@ streamlit cache clear                            # wipe the on-disk cache
 streamlit hello                                  # the built-in demo app
 streamlit init my_app                            # scaffold streamlit_app.py + requirements.txt
 ```
-
-## Files in this folder
-
-Each file runs on its own and demonstrates one idea. `data/orders.csv` is 2,400
-rows of fabricated sales orders, rebuilt deterministically by its generator.
-
-| File | What it shows |
-| --- | --- |
-| `streamlit_hello_app.py` | The rerun model, widgets as values, sidebar, columns, tabs |
-| `streamlit_caching.py` | `@st.cache_data` against `@st.cache_resource`, cache clearing |
-| `streamlit_session_state.py` | State across reruns, widget keys, callbacks, forms |
-| `streamlit_fragment_rerun.py` | `@st.fragment`, rerunning part of a page |
-| `streamlit_orders_dashboard.py` | Filters, metrics, charts, column config, CSV download |
-| `streamlit_multipage/streamlit_multipage_app.py` | `st.navigation` and `st.Page`, shared loaders, conditional pages |
-| `data/generate_orders.py` | Regenerates `orders.csv` |
 
 ## How it works
 
