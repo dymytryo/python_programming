@@ -5,6 +5,9 @@ Learning notes, notebooks, and practical Python utilities.
 ## Contents
 
 - Introductory programming notes and notebooks.
+- [`streamlit/`](streamlit/README.md): how Streamlit's rerun model, caching,
+  session state, and multipage routing work, with six runnable demo apps over a
+  bundled synthetic dataset.
 - `snippets/`: reusable Python/data engineering helpers moved from the
   former `python_snippets` workspace.
 
