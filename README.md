@@ -5,6 +5,9 @@ Learning notes, notebooks, and practical Python utilities.
 ## Contents
 
 - Introductory programming notes and notebooks.
+- [`software_development/`](software_development/README.md): maintainable Python
+  software, including resource cleanup, exceptions, object-oriented design, imports,
+  environments, packaging, testing, profiling, pandas, and web APIs.
 - [`streamlit/`](streamlit/README.md): how Streamlit's rerun model, caching,
   session state, and multipage routing work, with six runnable demo apps over a
   bundled synthetic dataset.
