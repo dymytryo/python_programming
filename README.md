@@ -5,6 +5,9 @@ Learning notes, notebooks, and practical Python utilities.
 ## Contents
 
 - Introductory programming notes and notebooks.
+- [`lectures/`](lectures/README.md): lecture notebooks for teaching introductory
+  Python, one per chapter, with concepts in dependency order, a runnable cell after
+  every idea, and a working program at the end.
 - [`software_development/`](software_development/README.md): maintainable Python
   software, including resource cleanup, exceptions, object-oriented design, imports,
   environments, packaging, testing, profiling, pandas, and web APIs.
