@@ -8,7 +8,7 @@ working program that uses only what came before it. There are no quizzes.
 | Notebook | Parts | Runnable cells | Ends with |
 |---|---|---|---|
 | [`02_elementary_programming.ipynb`](02_elementary_programming.ipynb) | 15 | 84 | A loan payment calculator and a distance calculator |
-| [`03_selection_statements.ipynb`](03_selection_statements.ipynb) | 16 | 81 | A BMI category program and a point-location program |
+| [`03_selection_statements.ipynb`](03_selection_statements.ipynb) | 16 | 85 | A BMI category program and a point-location program |
 
 Chapter 2 covers `print`, comments, numeric types, arithmetic, variables, strings, `input`,
 errors, float precision, formatting, integer division, assignment, constants, scientific
