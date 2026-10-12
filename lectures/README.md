@@ -8,14 +8,14 @@ working program that uses only what came before it. There are no quizzes.
 | Notebook | Parts | Runnable cells | Ends with |
 |---|---|---|---|
 | [`02_elementary_programming.ipynb`](02_elementary_programming.ipynb) | 15 | 84 | A loan payment calculator and a distance calculator |
-| [`03_selection_statements.ipynb`](03_selection_statements.ipynb) | 16 | 85 | A BMI category program and a point-location program |
+| [`03_selection_statements.ipynb`](03_selection_statements.ipynb) | 16 | 85 | A BMI category program and a number-guessing program |
 
 Chapter 2 covers `print`, comments, numeric types, arithmetic, variables, strings, `input`,
 errors, float precision, formatting, integer division, assignment, constants, scientific
 notation, time, and the path from a requirement to a program.
 
 Chapter 3 covers Boolean values, comparisons, random numbers, every `if` form, nested
-selection, logical operators, precedence, short-circuit evaluation, range and location
+selection, logical operators, precedence, short-circuit evaluation, range and boundary
 tests, conditional expressions, `match`/`case`, and common selection errors.
 
 The notebooks ship unexecuted and with no stored output, so every result appears live as the
