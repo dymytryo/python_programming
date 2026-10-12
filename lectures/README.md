@@ -5,10 +5,10 @@ alternation: one rule stated in a sentence or two, then one cell small enough to
 change on the spot. Concepts arrive in dependency order, and each notebook ends with a
 working program that uses only what came before it. There are no quizzes.
 
-| Notebook | Parts | Runnable cells | Ends with |
+| Notebook | Parts | Code cells | Ends with |
 |---|---|---|---|
 | [`02_elementary_programming.ipynb`](02_elementary_programming.ipynb) | 15 | 84 | A loan payment calculator and a distance calculator |
-| [`03_selection_statements.ipynb`](03_selection_statements.ipynb) | 16 | 85 | A BMI category program and a number-guessing program |
+| [`03_selection_statements.ipynb`](03_selection_statements.ipynb) | 6 | 76 | Common selection errors |
 
 Chapter 2 covers `print`, comments, numeric types, arithmetic, variables, strings, `input`,
 errors, float precision, formatting, integer division, assignment, constants, scientific
