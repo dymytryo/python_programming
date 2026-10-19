@@ -9,6 +9,7 @@ working program that uses only what came before it. There are no quizzes.
 |---|---|---|---|
 | [`02_elementary_programming.ipynb`](02_elementary_programming.ipynb) | 15 | 84 | A loan payment calculator and a distance calculator |
 | [`03_selection_statements.ipynb`](03_selection_statements.ipynb) | 6 | 76 | Common selection errors |
+| [`04_math_functions_characters_strings.ipynb`](04_math_functions_characters_strings.ipynb) | 9 | 70 | A course-section report |
 
 Chapter 2 covers `print`, comments, numeric types, arithmetic, variables, strings, `input`,
 errors, float precision, formatting, integer division, assignment, constants, scientific
@@ -17,6 +18,10 @@ notation, time, and the path from a requirement to a program.
 Chapter 3 covers Boolean values, comparisons, random numbers, every `if` form, nested
 selection, logical operators, precedence, short-circuit evaluation, range and boundary
 tests, conditional expressions, `match`/`case`, and common selection errors.
+
+Chapter 4 covers built-in numeric functions, the `math` module, Unicode characters, string
+literals and escape sequences, printing controls, string operators and comparisons, indexes,
+slices, string methods, output formatting, and f-strings.
 
 The notebooks ship unexecuted and with no stored output, so every result appears live as the
 cell is run. Each numbered part is stored folded through the `jp-MarkdownHeadingCollapsed`
