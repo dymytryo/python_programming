@@ -2,10 +2,10 @@
 
 Notebooks for teaching introductory Python, one per chapter of the course. Rules are stated
 in a sentence or two, and code is kept small enough to run and change on the spot. Chapter 4
-uses strict pairs: one explanation cell followed by one single-line code cell, so each result
-appears directly beneath the explanation for that line. Concepts arrive in dependency order,
-and each notebook ends with a working program that uses only what came before it. There are
-no quizzes.
+uses concise API-style descriptions with reusable parameter names; its executable cells supply
+the concrete values and display their results live. Concepts arrive in dependency order, and
+each notebook ends with a working program that uses only what came before it. There are no
+quizzes.
 
 | Notebook | Parts | Code cells | Ends with |
 |---|---|---|---|
