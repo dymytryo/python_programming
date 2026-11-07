@@ -12,7 +12,7 @@ no quizzes.
 | [`02_elementary_programming.ipynb`](02_elementary_programming.ipynb) | 15 | 84 | A loan payment calculator and a distance calculator |
 | [`03_selection_statements.ipynb`](03_selection_statements.ipynb) | 6 | 76 | Common selection errors |
 | [`04_math_functions_characters_strings.ipynb`](04_math_functions_characters_strings.ipynb) | 9 | 162 | A course-section report |
-| [`05_loops.ipynb`](05_loops.ipynb) | 10 | 55 | A text-analysis report |
+| [`05_loops.ipynb`](05_loops.ipynb) | 10 | 57 | A text-analysis report |
 
 Chapter 2 covers `print`, comments, numeric types, arithmetic, variables, strings, `input`,
 errors, float precision, formatting, integer division, assignment, constants, scientific
